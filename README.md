@@ -10,6 +10,9 @@
 # sqli_scanner.py
   -Advanced SQL injection scanner for decompiled apps. Features confidence scoring and smart filtering to reduce false positives.
 
+# api.sh
+  -scans for api keys in decompiled code
+
 # Usage
 
 # Basic deeplink scan:
@@ -23,6 +26,10 @@
 # High confidence SQL findings only:
 
   python3 sqli_scanner.py ./app --min-confidence 0.7
+
+# API Scanner
+
+  api.sh /path/to/decompiled_files
 
 # Legal Disclaimer
 
