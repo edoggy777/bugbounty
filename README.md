@@ -31,6 +31,10 @@
 
   api.sh /path/to/decompiled_files
 
+# Code Execution
+
+  python3 execute.py /path/to/decompiled_files
+
 # Legal Disclaimer
 
   These tools are for authorized security testing only. Users must obtain proper authorization and comply with all applicable laws. The authors are not responsible for misuse.
