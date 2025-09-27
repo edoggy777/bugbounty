@@ -35,6 +35,10 @@
 
   python3 execute.py /path/to/decompiled_files
 
+# apk decompiler
+
+  ./apk.sh <package_name>  
+
 # Legal Disclaimer
 
   These tools are for authorized security testing only. Users must obtain proper authorization and comply with all applicable laws. The authors are not responsible for misuse.
