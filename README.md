@@ -1,47 +1,51 @@
-# Android Security Scanner Suite
+Android Security Scanner Suite
 
-# Static analysis tools for identifying security vulnerabilities in Android applications.
+Static analysis tools for identifying security vulnerabilities in Android applications.
 
-# Tools
+Tools
 
-# file_deeplink.sh
+file_deeplink.sh
   -Scans for file traversal vulnerabilities in Android deeplinks. Analyzes source code for dangerous patterns.
 
-# sqli_scanner.py
+sqli_scanner.py
   -Advanced SQL injection scanner for decompiled apps. Features confidence scoring and smart filtering to reduce false positives.
 
-# api.sh
+api.sh
   -scans for api keys in decompiled code
 
-# Usage
+apk.sh
+  -pulls and decompiles apk
 
-# Basic deeplink scan:
+Usage
+
+Basic deeplink scan:
 
   ./file_deeplink.sh /path/to/app/sources
   
-# Basic SQL injection scan:
+Basic SQL injection scan:
 
   python3 sqli_scanner.py /path/to/decompiled/app
 
-# High confidence SQL findings only:
+High confidence SQL findings only:
 
   python3 sqli_scanner.py ./app --min-confidence 0.7
 
-# API Scanner
+API Scanner
 
   api.sh /path/to/decompiled_files
 
-# Code Execution
+Code Execution
 
   python3 execute.py /path/to/decompiled_files
 
-# apk decompiler
+apk decompiler
 
   ./apk.sh <package_name>  
 
-# Legal Disclaimer
+Legal Disclaimer
 
   These tools are for authorized security testing only. Users must obtain proper authorization and comply with all applicable laws. The authors are not responsible for misuse.
-# License
+
+License
 
 MIT 
